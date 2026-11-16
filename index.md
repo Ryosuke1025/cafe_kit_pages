@@ -13,6 +13,7 @@ title: CafeKit
 - 運営者: Ryosuke Suzaki
 - メールアドレス: info@cafekit.app
 
-## プライバシーポリシー
+## 規約
 
-[プライバシーポリシー](/privacy-policy/)
+- [利用規約](/terms/)
+- [プライバシーポリシー](/privacy-policy/)
