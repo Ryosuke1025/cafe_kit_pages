@@ -96,4 +96,4 @@ title: 利用規約
 - 運営者: Ryosuke Suzaki
 - メールアドレス: info@cafekit.app
 
-制定日: 【制定日】
+制定日: 2026年11月17日
