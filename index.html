@@ -1,0 +1,329 @@
+---
+layout: default
+title: CafeKit
+---
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M7.5 13.5h3M7.5 17h3M13.5 13.5h3"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 9h13v4.5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6V9z"/><path d="M17 10.5h1.5a2.5 2.5 0 0 1 0 5H17M8 2.5c-.9 1.1.9 2.4 0 3.5M12 2.5c-.9 1.1.9 2.4 0 3.5M3 22h15"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 10.5 13.5"/><path d="M21 3 14.5 21l-4-7.5L3 9.5 21 3z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 20.5h18"/><rect x="5" y="11" width="3.5" height="7" rx="1"/><rect x="10.25" y="5" width="3.5" height="13" rx="1"/><rect x="15.5" y="8.5" width="3.5" height="9.5" rx="1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20a6.5 6.5 0 0 0-4-6"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4V2.5h6V4M9 10h6M9 14h6M9 18h3"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1L3.5 8.5"/><path d="M3.5 3.5v5h5M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h14v15H6a2 2 0 0 0-2 2z"/><path d="M4 20a2 2 0 0 0 2 2h14M8.5 7.5h7M8.5 11h5"/></symbol>
+  <symbol id="i-sunrise" viewBox="0 0 24 24"><path d="M12 3v3.5M4.9 8.4l2 2M19.1 8.4l-2 2M2 18.5h20M6.5 18.5a5.5 5.5 0 0 1 11 0M5 22h14"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M7.5 12h9"/></symbol>
+</svg>
+
+<main>
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">カフェのための業務アプリ</p>
+        <h1 class="hero__title"><span class="phrase">カフェの裏方仕事を、</span><span class="phrase accent">スマホ1台で。</span></h1>
+        <p class="hero__lead">予定とシフトの記録から、メニューの原価計算、在庫に合わせた発注、売上と利益の管理まで。カフェのバックオフィスを、iPhone ひとつにまとめました。</p>
+        <div class="hero__actions">
+          <a class="button" href="#features">できることを見る<svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a class="button button--ghost" href="#contact">お問い合わせ</a>
+        </div>
+        <ul class="chips" aria-label="主な機能">
+          <li>原価率の自動計算</li>
+          <li>発注メールの送信</li>
+          <li>売上と利益のグラフ</li>
+          <li>POS レジ連携</li>
+        </ul>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__stage">
+          <img class="hero__photo" src="{{ '/assets/img/hero.webp' | relative_url }}" alt="開店前のカフェのカウンターに置かれたカフェラテ" width="1024" height="1280" fetchpriority="high">
+          <div class="hero__phone">
+            <div class="phone phone--carousel">
+              <img class="is-active" src="{{ '/assets/img/screens/daily-today.webp' | relative_url }}" alt="デイリータブ。今日の予定・記録のボタン・シフト・経費・廃棄が並ぶ画面" width="804" height="1748">
+              <img src="{{ '/assets/img/screens/product-list.webp' | relative_url }}" alt="商品タブ。商品ごとに価格と原価率が並ぶ一覧" width="804" height="1748">
+              <img src="{{ '/assets/img/screens/order-cart.webp' | relative_url }}" alt="発注タブ。仕入先ごとに材料と発注の数量が並ぶ画面" width="804" height="1748">
+              <img src="{{ '/assets/img/screens/finance-profit.webp' | relative_url }}" alt="財務タブ。月の利益のグラフと内訳" width="804" height="1748">
+            </div>
+          </div>
+        </div>
+        <div class="tabbar" role="group" aria-label="アプリのタブ">
+          <button class="tabbar__item" type="button" aria-pressed="true"><svg class="icon"><use href="#i-calendar"/></svg>デイリー</button>
+          <button class="tabbar__item" type="button" aria-pressed="false"><svg class="icon"><use href="#i-cup"/></svg>商品</button>
+          <button class="tabbar__item" type="button" aria-pressed="false"><svg class="icon"><use href="#i-send"/></svg>発注</button>
+          <button class="tabbar__item" type="button" aria-pressed="false"><svg class="icon"><use href="#i-chart"/></svg>財務</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section overview" id="features">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">できること</p>
+        <h2 class="section__title">毎日の仕事を、4つのタブで。</h2>
+        <p class="section__lead">開店前の確認から、月末の数字の振り返りまで。カフェの裏方の仕事を、タブごとに整理しています。</p>
+      </header>
+      <ol class="tab-cards">
+        <li data-reveal>
+          <a class="tab-card" href="#daily">
+            <span class="tab-card__icon"><svg class="icon"><use href="#i-calendar"/></svg></span>
+            <span class="tab-card__name">デイリー</span>
+            <span class="tab-card__text">今日の予定とシフト、廃棄や経費の記録</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a class="tab-card" href="#products">
+            <span class="tab-card__icon"><svg class="icon"><use href="#i-cup"/></svg></span>
+            <span class="tab-card__name">商品</span>
+            <span class="tab-card__text">メニューと材料、原価と原価率の計算</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a class="tab-card" href="#orders">
+            <span class="tab-card__icon"><svg class="icon"><use href="#i-send"/></svg></span>
+            <span class="tab-card__name">発注</span>
+            <span class="tab-card__text">在庫に合わせた発注の目安と、発注メールの送信</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a class="tab-card" href="#finance">
+            <span class="tab-card__icon"><svg class="icon"><use href="#i-chart"/></svg></span>
+            <span class="tab-card__name">財務</span>
+            <span class="tab-card__text">自動で取り込んだ売上と、経費を差し引いた利益</span>
+          </a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="feature" id="daily">
+    <div class="container feature__inner">
+      <div class="feature__visual" data-reveal>
+        <div class="phones">
+          <figure class="phone-shot">
+            <div class="phone"><img src="{{ '/assets/img/screens/daily-calendar.webp' | relative_url }}" alt="週ごとのカレンダーと、その日の予定の一覧" width="804" height="1748" loading="lazy"></div>
+            <figcaption>予定のカレンダー</figcaption>
+          </figure>
+          <figure class="phone-shot">
+            <div class="phone"><img src="{{ '/assets/img/screens/daily-today.webp' | relative_url }}" alt="今日の予定・記録のボタン・シフト・経費・廃棄が並ぶ画面" width="804" height="1748" loading="lazy"></div>
+            <figcaption>今日の予定と記録</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="feature__copy" data-reveal>
+        <p class="feature__label"><svg class="icon"><use href="#i-calendar"/></svg>デイリー</p>
+        <h2 class="feature__title">今日やることと記録を、<br>ひとつの画面に。</h2>
+        <p class="feature__text">アプリを開けば、今日の予定と出勤するスタッフがすぐに分かります。廃棄や経費は、気づいたときにその場で記録できます。</p>
+        <ul class="checks">
+          <li><svg class="icon"><use href="#i-check"/></svg>予定はカレンダーで管理。毎日・毎週・毎月の繰り返しにも対応</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>廃棄・経費・月ごとの固定費を記録</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>シフトを登録すると、時給から人件費を集計</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature feature--reverse" id="products">
+    <div class="container feature__inner">
+      <div class="feature__visual" data-reveal>
+        <div class="phones">
+          <figure class="phone-shot">
+            <div class="phone"><img src="{{ '/assets/img/screens/product-list.webp' | relative_url }}" alt="商品の一覧。商品ごとに価格と原価率が並ぶ" width="804" height="1748" loading="lazy"></div>
+            <figcaption>商品と原価率の一覧</figcaption>
+          </figure>
+          <figure class="phone-shot">
+            <div class="phone"><img src="{{ '/assets/img/screens/product-detail.webp' | relative_url }}" alt="商品の詳細。1個あたりの原価・原価率・粗利が表示されている" width="804" height="1748" loading="lazy"></div>
+            <figcaption>1個あたりの原価と粗利</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="feature__copy" data-reveal>
+        <p class="feature__label"><svg class="icon"><use href="#i-cup"/></svg>商品</p>
+        <h2 class="feature__title">メニューごとの原価率が、<br>登録するだけで分かる。</h2>
+        <p class="feature__text">商品に使う材料と分量を登録すると、1個あたりの原価・原価率・粗利を自動で計算します。材料の単価を見直せば、各商品の原価にもすぐに反映されます。</p>
+        <ul class="checks">
+          <li><svg class="icon"><use href="#i-check"/></svg>目標の原価率を超えた商品は、一覧でひと目で分かる</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>商品ごとに、材料と作り方を記録</li>
+        </ul>
+        <div class="callout">
+          <span class="callout__icon"><svg class="icon"><use href="#i-scan"/></svg></span>
+          <p><strong>ファイルや写真から読み取って登録</strong>メニュー表や仕入れの資料（PDF・画像・CSV・Excel）を読み取り、商品や材料の下書きを作ります。内容を確かめてから登録できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="orders">
+    <div class="container feature__inner">
+      <div class="feature__visual" data-reveal>
+        <div class="phones">
+          <figure class="phone-shot">
+            <div class="phone"><img src="{{ '/assets/img/screens/order-inventory.webp' | relative_url }}" alt="材料ごとの理論在庫の一覧" width="804" height="1748" loading="lazy"></div>
+            <figcaption>材料ごとの在庫</figcaption>
+          </figure>
+          <figure class="phone-shot">
+            <div class="phone"><img src="{{ '/assets/img/screens/order-cart.webp' | relative_url }}" alt="発注の画面。仕入先ごとに材料と発注の数量が並ぶ" width="804" height="1748" loading="lazy"></div>
+            <figcaption>仕入先ごとの発注の目安</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="feature__copy" data-reveal>
+        <p class="feature__label"><svg class="icon"><use href="#i-send"/></svg>発注</p>
+        <h2 class="feature__title">在庫から発注の目安を出して、<br>そのままメールで発注。</h2>
+        <p class="feature__text">入荷・売上・廃棄から材料の在庫を計算し、発注の目安を出します。数量を確かめたら、送信するだけで仕入先ごとに発注メールが届きます。</p>
+        <ul class="checks">
+          <li><svg class="icon"><use href="#i-check"/></svg>廃棄率や安全在庫を見込んだ発注の目安</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>材料ごとの仕入先に、発注メールを振り分けて送信</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>入荷の確定と棚卸しで、在庫を実際の数に合わせる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature feature--reverse" id="finance">
+    <div class="container feature__inner">
+      <div class="feature__visual" data-reveal>
+        <div class="phones">
+          <figure class="phone-shot">
+            <div class="phone"><img src="{{ '/assets/img/screens/finance-sales.webp' | relative_url }}" alt="カテゴリ別の売上のグラフ" width="804" height="1748" loading="lazy"></div>
+            <figcaption>カテゴリ別の売上</figcaption>
+          </figure>
+          <figure class="phone-shot">
+            <div class="phone"><img src="{{ '/assets/img/screens/finance-profit.webp' | relative_url }}" alt="月の利益のグラフと、売上・原価・人件費・経費の内訳" width="804" height="1748" loading="lazy"></div>
+            <figcaption>利益とその内訳</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="feature__copy" data-reveal>
+        <p class="feature__label"><svg class="icon"><use href="#i-chart"/></svg>財務</p>
+        <h2 class="feature__title">売上は自動で取り込み、<br>利益まで月ごとにグラフで。</h2>
+        <p class="feature__text">POS レジと連携すると、アプリを開いたときに売上を自動で取り込みます。カテゴリ別の売上と、原価・人件費・経費・固定費を差し引いた利益を、月ごとに確認できます。</p>
+        <ul class="checks">
+          <li><svg class="icon"><use href="#i-check"/></svg>POS レジの商品を一度対応付ければ、次からは自動で取り込み</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>原価は売れた商品の材料から、人件費はシフトから自動で計算</li>
+        </ul>
+        <p class="feature__note">連携していない POS レジの売上も、CSV で取り込めます。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <img class="band__photo" src="{{ '/assets/img/barista.webp' | relative_url }}" alt="" width="1536" height="1024" loading="lazy">
+    <div class="band__inner container" data-reveal>
+      <p class="band__title">お店に立つ時間を、<br>もっと長く。</p>
+      <p class="band__text">仕込みの予定、発注、数字の管理。カウンターの外の仕事を、営業の合間にスマホで。</p>
+    </div>
+  </section>
+
+  <section class="section day" id="day">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">使い方</p>
+        <h2 class="section__title">CafeKit のある1日。</h2>
+      </header>
+      <ol class="timeline">
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__icon"><svg class="icon"><use href="#i-sunrise"/></svg></span>
+          <p class="timeline__when">開店前</p>
+          <p class="timeline__what">今日の予定と、出勤するスタッフを確認</p>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__icon"><svg class="icon"><use href="#i-cup"/></svg></span>
+          <p class="timeline__when">営業中</p>
+          <p class="timeline__what">廃棄や経費を、その場で記録</p>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__icon"><svg class="icon"><use href="#i-moon"/></svg></span>
+          <p class="timeline__when">閉店後</p>
+          <p class="timeline__what">発注の目安を見て、仕入先に発注メールを送信</p>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <span class="timeline__icon"><svg class="icon"><use href="#i-chart"/></svg></span>
+          <p class="timeline__when">月末</p>
+          <p class="timeline__what">売上と利益を振り返り、原価率の高いメニューを見直す</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section more">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">ほかにも</p>
+        <h2 class="section__title">細かいところまで、カフェの仕事に合わせて。</h2>
+      </header>
+      <ul class="more-grid">
+        <li class="more-card" data-reveal>
+          <span class="more-card__icon"><svg class="icon"><use href="#i-users"/></svg></span>
+          <h3>スタッフと稼働実績</h3>
+          <p>スタッフごとの勤務時間と人件費を、月ごとに確認できます。</p>
+        </li>
+        <li class="more-card" data-reveal>
+          <span class="more-card__icon"><svg class="icon"><use href="#i-clipboard"/></svg></span>
+          <h3>棚卸しとロスの記録</h3>
+          <p>計算上の在庫と差がある材料だけを数えて補正。差の履歴も残ります。</p>
+        </li>
+        <li class="more-card" data-reveal>
+          <span class="more-card__icon"><svg class="icon"><use href="#i-history"/></svg></span>
+          <h3>発注の履歴と入荷</h3>
+          <p>送った発注を残し、届いた数量を確定。送れなかった発注は再送できます。</p>
+        </li>
+        <li class="more-card" data-reveal>
+          <span class="more-card__icon"><svg class="icon"><use href="#i-book"/></svg></span>
+          <h3>メニューの作り方</h3>
+          <p>商品ごとに、材料と作り方の手順をまとめて残せます。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <img class="contact__photo" src="{{ '/assets/img/beans.webp' | relative_url }}" alt="" width="1536" height="640" loading="lazy">
+    <div class="container contact__inner" data-reveal>
+      <h2 class="contact__title">お問い合わせ</h2>
+      <p class="contact__text">不具合のご報告、ご意見、機能のご要望は、次のメールアドレスにお送りください。</p>
+      <dl class="contact__list">
+        <div><dt>運営者</dt><dd>Ryosuke Suzaki</dd></div>
+        <div><dt>メールアドレス</dt><dd><a href="mailto:info@cafekit.app">info@cafekit.app</a></dd></div>
+      </dl>
+      <div class="contact__actions">
+        <a class="button button--light" href="mailto:info@cafekit.app"><svg class="icon"><use href="#i-mail"/></svg>メールを送る</a>
+        <a class="button button--outline-light" href="https://www.instagram.com/cafekit.app/"><svg class="icon"><use href="#i-instagram"/></svg>@cafekit.app</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  (function () {
+    var screens = document.querySelectorAll(".phone--carousel img");
+    var tabs = document.querySelectorAll(".tabbar__item");
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var current = 0;
+    var timer;
+
+    function show(index) {
+      current = index;
+      screens.forEach(function (el, i) { el.classList.toggle("is-active", i === index); });
+      tabs.forEach(function (el, i) { el.setAttribute("aria-pressed", String(i === index)); });
+    }
+
+    function startRotation() {
+      if (reduceMotion) return;
+      clearInterval(timer);
+      timer = setInterval(function () { show((current + 1) % screens.length); }, 3500);
+    }
+
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener("click", function () {
+        show(i);
+        startRotation();
+      });
+    });
+    startRotation();
+  })();
+</script>
