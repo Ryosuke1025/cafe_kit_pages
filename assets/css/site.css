@@ -289,17 +289,6 @@ ol {
   text-align: center;
 }
 
-.badge {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 2px 10px;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
-  vertical-align: 1px;
-}
-
 /* Phone mockup */
 
 /* padding の % は親の幅が基準になり、親より細い端末だけ枠が太くなるため、画面の margin で枠を作る */
