@@ -13,6 +13,10 @@ title: CafeKit
 - 運営者: Ryosuke Suzaki
 - メールアドレス: info@cafekit.app
 
+## SNS
+
+- Instagram: [@cafekit.app](https://www.instagram.com/cafekit.app/)
+
 ## 規約
 
 - [利用規約](/terms/)
