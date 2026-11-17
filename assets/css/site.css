@@ -278,17 +278,6 @@ ol {
   color: var(--muted);
 }
 
-.section--warm {
-  background: var(--surface-warm);
-}
-
-.section__note {
-  margin-top: 32px;
-  color: var(--muted);
-  font-size: 0.92rem;
-  text-align: center;
-}
-
 /* Phone mockup */
 
 /* padding の % は親の幅が基準になり、親より細い端末だけ枠が太くなるため、画面の margin で枠を作る */
@@ -867,12 +856,6 @@ ol {
   margin-top: 4px;
   font-weight: 700;
   line-height: 1.6;
-}
-
-.timeline--3 {
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 920px;
-  margin-inline: auto;
 }
 
 @media (max-width: 900px) {
