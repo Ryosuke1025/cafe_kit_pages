@@ -556,6 +556,14 @@ ol {
   grid-column: 5;
 }
 
+.fit__box--merged {
+  grid-row: 2 / 4;
+}
+
+.fit__box--dup {
+  display: none;
+}
+
 .fit__box--next,
 .fit__link--next {
   margin-top: 20px;
@@ -619,6 +627,14 @@ ol {
 
   .fit__box--break {
     margin-top: 20px;
+  }
+
+  .fit__box--merged {
+    grid-row: auto;
+  }
+
+  .fit__box--dup {
+    display: grid;
   }
 
   .fit__arrow {
