@@ -26,17 +26,17 @@ title: CafeKit
     <div class="hero__inner">
       <div class="hero__copy">
         <p class="eyebrow">カフェのための業務アプリ</p>
-        <h1 class="hero__title"><span class="phrase">カフェの裏方仕事を、</span><span class="phrase accent">スマホ1台で。</span></h1>
-        <p class="hero__lead">予定とシフトの記録から、メニューの原価計算、在庫に合わせた発注、売上と利益の管理まで。カフェのバックオフィスを、iPhone ひとつにまとめました。</p>
+        <h1 class="hero__title"><span class="phrase">1杯の原価と材料を、</span><span class="phrase accent">スマホ1台で。</span></h1>
+        <p class="hero__lead">POS と会計ソフトはそのままで。請求書を読み取れば材料の単価を更新し、原価率を超えたメニューと、明日の発注量が分かります。</p>
         <div class="hero__actions">
           <a class="button" href="#features">できることを見る<svg class="icon"><use href="#i-arrow"/></svg></a>
           <a class="button button--ghost" href="#contact">お問い合わせ</a>
         </div>
         <ul class="chips" aria-label="主な機能">
+          <li>請求書から単価を更新</li>
           <li>原価率の自動計算</li>
           <li>発注メールの送信</li>
-          <li>売上と利益のグラフ</li>
-          <li>POS レジ連携</li>
+          <li>年末の棚卸表</li>
         </ul>
       </div>
       <div class="hero__visual">
@@ -44,7 +44,7 @@ title: CafeKit
           <img class="hero__photo" src="{{ '/assets/img/hero.webp' | relative_url }}" alt="開店前のカフェのカウンターに置かれたカフェラテ" width="1024" height="1280" fetchpriority="high">
           <div class="hero__phone">
             <div class="phone phone--carousel">
-              <img class="is-active" src="{{ '/assets/img/screens/daily-today.webp' | relative_url }}" alt="デイリータブ。今日の予定・記録のボタン・シフト・経費・廃棄が並ぶ画面" width="804" height="1748">
+              <img class="is-active" src="{{ '/assets/img/screens/daily-today.webp' | relative_url }}" alt="デイリータブ。今日の予定・記録のボタン・シフト・廃棄が並ぶ画面" width="804" height="1748">
               <img src="{{ '/assets/img/screens/product-list.webp' | relative_url }}" alt="商品タブ。商品ごとに価格と原価率が並ぶ一覧" width="804" height="1748">
               <img src="{{ '/assets/img/screens/order-cart.webp' | relative_url }}" alt="発注タブ。仕入先ごとに材料と発注の数量が並ぶ画面" width="804" height="1748">
               <img src="{{ '/assets/img/screens/finance-profit.webp' | relative_url }}" alt="財務タブ。月の利益のグラフと内訳" width="804" height="1748">
@@ -61,6 +61,42 @@ title: CafeKit
     </div>
   </section>
 
+  <section class="section fit" id="fit">
+    <div class="container">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">今のやり方のまま</p>
+        <h2 class="section__title">POS と会計ソフトは、今までどおり。</h2>
+      </header>
+      <figure class="fit__figure" aria-label="POS・会計ソフト・CafeKit の関係" data-reveal>
+        <div class="fit__row">
+          <p class="fit__label">売上と支払い（今までどおり）</p>
+          <ol class="fit__flow">
+            <li class="fit__step"><div class="fit__box">POS レジ・カード・銀行</div><svg class="icon fit__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></li>
+            <li class="fit__step"><div class="fit__box">会計ソフト</div></li>
+          </ol>
+        </div>
+        <div class="fit__row">
+          <ol class="fit__flow">
+            <li class="fit__step"><div class="fit__box">POS の売上・発注</div><svg class="icon fit__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></li>
+            <li class="fit__step">
+              <div class="fit__box fit__box--brand">
+                <strong class="fit__name">CafeKit</strong>
+                <ul class="fit__items">
+                  <li>1杯の原価</li>
+                  <li>材料の残り</li>
+                  <li>明日の発注量</li>
+                </ul>
+              </div>
+              <svg class="icon fit__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </li>
+            <li class="fit__step"><div class="fit__box">年末の棚卸表</div><svg class="icon fit__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></li>
+            <li class="fit__step"><div class="fit__box">会計ソフト</div></li>
+          </ol>
+        </div>
+      </figure>
+    </div>
+  </section>
+
   <section class="section overview" id="features">
     <div class="container">
       <header class="section__head" data-reveal>
@@ -73,7 +109,7 @@ title: CafeKit
           <a class="tab-card" href="#daily">
             <span class="tab-card__icon"><svg class="icon"><use href="#i-calendar"/></svg></span>
             <span class="tab-card__name">デイリー</span>
-            <span class="tab-card__text">今日の予定とシフト、廃棄や経費の記録</span>
+            <span class="tab-card__text">今日の予定とシフト、廃棄の記録</span>
           </a>
         </li>
         <li data-reveal>
@@ -94,7 +130,7 @@ title: CafeKit
           <a class="tab-card" href="#finance">
             <span class="tab-card__icon"><svg class="icon"><use href="#i-chart"/></svg></span>
             <span class="tab-card__name">財務</span>
-            <span class="tab-card__text">自動で取り込んだ売上と、経費を差し引いた利益</span>
+            <span class="tab-card__text">自動で取り込んだ売上と、費用を差し引いた利益</span>
           </a>
         </li>
       </ol>
@@ -110,7 +146,7 @@ title: CafeKit
             <figcaption>予定のカレンダー</figcaption>
           </figure>
           <figure class="phone-shot">
-            <div class="phone"><img src="{{ '/assets/img/screens/daily-today.webp' | relative_url }}" alt="今日の予定・記録のボタン・シフト・経費・廃棄が並ぶ画面" width="804" height="1748" loading="lazy"></div>
+            <div class="phone"><img src="{{ '/assets/img/screens/daily-today.webp' | relative_url }}" alt="今日の予定・記録のボタン・シフト・廃棄が並ぶ画面" width="804" height="1748" loading="lazy"></div>
             <figcaption>今日の予定と記録</figcaption>
           </figure>
         </div>
@@ -118,10 +154,10 @@ title: CafeKit
       <div class="feature__copy" data-reveal>
         <p class="feature__label"><svg class="icon"><use href="#i-calendar"/></svg>デイリー</p>
         <h2 class="feature__title">今日やることと記録を、<br>ひとつの画面に。</h2>
-        <p class="feature__text">アプリを開けば、今日の予定と出勤するスタッフがすぐに分かります。廃棄や経費は、気づいたときにその場で記録できます。</p>
+        <p class="feature__text">アプリを開けば、今日の予定と出勤するスタッフがすぐに分かります。廃棄は、気づいたときにその場で記録できます。</p>
         <ul class="checks">
           <li><svg class="icon"><use href="#i-check"/></svg>予定はカレンダーで管理。毎日・毎週・毎月の繰り返しにも対応</li>
-          <li><svg class="icon"><use href="#i-check"/></svg>廃棄・経費・月ごとの固定費を記録</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>廃棄と、毎月の費用を記録</li>
           <li><svg class="icon"><use href="#i-check"/></svg>シフトを登録すると、時給から人件費を集計</li>
         </ul>
       </div>
@@ -177,6 +213,7 @@ title: CafeKit
         <h2 class="feature__title">在庫から発注の目安を出して、<br>そのままメールで発注。</h2>
         <p class="feature__text">入荷・売上・廃棄から材料の在庫を計算し、発注の目安を出します。数量を確かめたら、送信するだけで仕入先ごとに発注メールが届きます。</p>
         <ul class="checks">
+          <li><svg class="icon"><use href="#i-check"/></svg>請求書を読み取って材料の単価を更新し、目標の原価率を超えたメニューを知らせる</li>
           <li><svg class="icon"><use href="#i-check"/></svg>廃棄率や安全在庫を見込んだ発注の目安</li>
           <li><svg class="icon"><use href="#i-check"/></svg>材料ごとの仕入先に、発注メールを振り分けて送信</li>
           <li><svg class="icon"><use href="#i-check"/></svg>入荷の確定と棚卸しで、在庫を実際の数に合わせる</li>
@@ -194,7 +231,7 @@ title: CafeKit
             <figcaption>カテゴリ別の売上</figcaption>
           </figure>
           <figure class="phone-shot">
-            <div class="phone"><img src="{{ '/assets/img/screens/finance-profit.webp' | relative_url }}" alt="月の利益のグラフと、売上・原価・人件費・経費の内訳" width="804" height="1748" loading="lazy"></div>
+            <div class="phone"><img src="{{ '/assets/img/screens/finance-profit.webp' | relative_url }}" alt="月の利益のグラフと、売上・原価・人件費・毎月の費用の内訳" width="804" height="1748" loading="lazy"></div>
             <figcaption>利益とその内訳</figcaption>
           </figure>
         </div>
@@ -202,7 +239,7 @@ title: CafeKit
       <div class="feature__copy" data-reveal>
         <p class="feature__label"><svg class="icon"><use href="#i-chart"/></svg>財務</p>
         <h2 class="feature__title">売上は自動で取り込み、<br>利益まで月ごとにグラフで。</h2>
-        <p class="feature__text">POS レジと連携すると、アプリを開いたときに売上を自動で取り込みます。カテゴリ別の売上と、原価・人件費・経費・固定費を差し引いた利益を、月ごとに確認できます。</p>
+        <p class="feature__text">POS レジと連携すると、アプリを開いたときに売上を自動で取り込みます。カテゴリ別の売上と、原価・人件費・毎月の費用を差し引いた利益を、月ごとに確認できます。</p>
         <ul class="checks">
           <li><svg class="icon"><use href="#i-check"/></svg>POS レジの商品を一度対応付ければ、次からは自動で取り込み</li>
           <li><svg class="icon"><use href="#i-check"/></svg>原価は売れた商品の材料から、人件費はシフトから自動で計算</li>
@@ -210,7 +247,7 @@ title: CafeKit
         <p class="feature__note">連携していない POS レジの売上も、CSV で取り込めます。</p>
         <div class="callout">
           <span class="callout__icon"><svg class="icon"><use href="#i-download"/></svg></span>
-          <p><strong>確定申告の準備に、まとめて書き出し</strong>売上・仕入・経費・人件費・棚卸を、年ごと・月ごとにファイルに書き出せます。お使いの会計ソフトや税理士さん、AI アシスタントにそのまま渡せます。</p>
+          <p><strong>年末の棚卸表を書き出し</strong>12/31 時点の材料の数量と金額を書き出せます。合計は、決算書の期末商品棚卸高に入れられます。</p>
         </div>
       </div>
     </div>
@@ -239,7 +276,7 @@ title: CafeKit
         <li class="timeline__item" data-reveal>
           <span class="timeline__icon"><svg class="icon"><use href="#i-cup"/></svg></span>
           <p class="timeline__when">営業中</p>
-          <p class="timeline__what">廃棄や経費を、その場で記録</p>
+          <p class="timeline__what">廃棄を、その場で記録</p>
         </li>
         <li class="timeline__item" data-reveal>
           <span class="timeline__icon"><svg class="icon"><use href="#i-moon"/></svg></span>

@@ -1,6 +1,6 @@
 title: CafeKit
-tagline: カフェの裏方仕事を、スマホ1台で。
-description: カフェのバックオフィスをスマホ1台で行える業務アプリ。予定とシフトの記録、原価計算、発注、売上と利益の管理をひとつにまとめました。
+tagline: 1杯の原価と材料を、スマホ1台で。
+description: カフェ向けの業務アプリ。POS と会計ソフトはそのままで、メニューの原価、材料の在庫、発注をまとめて扱えます。
 lang: ja
 url: https://cafekit.app
 exclude:
